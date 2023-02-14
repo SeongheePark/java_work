@@ -8,7 +8,6 @@ public class MainTest1 {
 		System.out.println("========");
 		ManualCar manualCar = new ManualCar();
 		manualCar.run();
-		
 
 	}
 

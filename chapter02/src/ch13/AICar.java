@@ -18,12 +18,12 @@ public class AICar extends Car {
 	@Override
 	public void wiper() {
 		System.out.println("스스로 빗물 제거");
-		
+
 	}
+
 	@Override
 	public void washCar() {
 		System.out.println("스스로 세차합니다");
 	}
-	
 
 }
