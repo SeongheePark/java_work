@@ -1,4 +1,4 @@
-package ch02;
+package ch01;
 
 import java.awt.BorderLayout;
 
