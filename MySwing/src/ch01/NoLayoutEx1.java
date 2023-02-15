@@ -17,7 +17,7 @@ public class NoLayoutEx1 extends JFrame {
 
 	private void initData() {
 		setTitle("좌표기반연습");
-		setSize(1000, 1000);
+		setSize(600, 600);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		button1 = new JButton("button1");
 		button1.setSize(100, 100);
@@ -32,12 +32,13 @@ public class NoLayoutEx1 extends JFrame {
 		// 좌표 기반으로 셋팅을 하면 각 컴포넌트에 크기를 지정해주어야 한다. 기본값 0이다
 		button1.setLocation(100, 100);
 		button2.setLocation(200, 150);
-		button3.setLocation(450, 200);
+		button3.setLocation(300, 100);
 		add(button1);
 		add(button2);
 		add(button3);
 		setVisible(true);
 	}
+
 	public static void main(String[] args) {
 		new NoLayoutEx1();
 	}

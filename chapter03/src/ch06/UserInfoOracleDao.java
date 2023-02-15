@@ -18,7 +18,7 @@ public class UserInfoOracleDao implements IUserInfoDao {
 
 	@Override
 	public void deleteUserInfo(String userName) {
-		System.out.println("Oracle 삭제 기능 호출");
+//		System.out.println("Oracle 삭제 기능 호출");
 		System.out.println("이름: " + userName);
 	}
 

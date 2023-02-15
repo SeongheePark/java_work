@@ -25,8 +25,7 @@ public class FlowLayoutEx extends JFrame {
 
 	public void initData() {
 		setTitle("FlowLayout 연습");
-		setSize(500, 500);
-		setVisible(true);
+		setSize(600, 600);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		button1 = new JButton("button1");
@@ -46,6 +45,7 @@ public class FlowLayoutEx extends JFrame {
 		this.add(button4);
 		this.add(button5);
 		add(button6);
+		setVisible(true);
 	}
 
 	// 코드 테스트

@@ -39,9 +39,11 @@ public class MyFramePanel extends JFrame {
 		add(panel2, BorderLayout.SOUTH);
 		// 루트 패널 기본 레이아웃 BorderLayout이다.
 		// 추가적으로 만들어 사용하는 Panel은 기본 레이아웃이 FlowLayout 이다.
-		panel1.add(buttons[0], BorderLayout.WEST);
+
+		panel1.add(buttons[0]);
 		panel1.add(buttons[1]);
 		panel1.add(buttons[2]);
+
 		panel2.add(buttons[3]);
 		panel2.add(buttons[4]);
 		panel2.add(buttons[5]);

@@ -25,7 +25,9 @@ public class MyComponents extends JFrame {
 		setTitle("컴포넌트 확인");
 		setSize(800, 800);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+		 
+		// 위에서 이미 데이터타입 선언.
+		// 가지고 오면 -> 범위가 initData 안이라 지역변수가 되버림.
 		button1 = new JButton("JButton");
 		label = new JLabel("글자를 적는 컴포넌트");
 		textField = new JTextField("아이디입력", 20);

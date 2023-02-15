@@ -7,7 +7,7 @@ public class MyFrame extends JFrame {
 		// super 부모의 메서드
 		setTitle("MyFrame01");
 		// width, height
-		setSize(200, 800);
+		setSize(500, 500);
 		setVisible(true);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
