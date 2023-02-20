@@ -1,5 +1,7 @@
 package bubble;
 
-public class Player {
-	
+import javax.swing.JLabel;
+
+public class Player extends JLabel {
+
 }

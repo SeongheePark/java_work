@@ -13,22 +13,14 @@ public class Frame extends JFrame{
 		addEventListener();
 	}
 	private void initData() {
-		setTitle("bubble Game");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("Bubble Game");
 		backgroundMap = new JLabel(new ImageIcon("images/backgroundMap.png"));
-		setContentPane(backgroundMap);
 		setSize(1000,640);
 	}
 	private void setInitLayout() {
-		setLayout(null);
-		setResizable(false);
-		setLocationRelativeTo(null);
-		setVisible(true);
+		
 	}
 	private void addEventListener() {
 		
-	}
-	public static void main(String[] args) {
-		new Frame();
 	}
 }
