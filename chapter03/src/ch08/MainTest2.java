@@ -14,13 +14,6 @@ public class MainTest2 {
 		} catch (Exception e) {
 			System.out.println("0으로 나눌 수 없습니다!");
 		}
-		
-		Calculator calculator = new Calculator();
-		
 
 	}
-}
-
-class Calculator {
-	
 }

@@ -11,7 +11,7 @@ public class ArrayExceptionHandling {
 			}
 
 		} catch (Exception e) {
-			System.out.println("개발자야 인덱스 길이 모르니!");
+			System.out.println("인덱스 길이 확인!");
 		}
 		System.out.println("비정상 종료되지 않았습니다");
 	}// end of main

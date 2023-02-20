@@ -15,7 +15,7 @@ public class ExceptionHandling {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			scanner.close(); //자원 해제 용도로도 많이 사용된다.
+			scanner.close(); // 자원 해제 용도로도 많이 사용된다.
 		}
 
 	}// end of main
