@@ -1,4 +1,4 @@
-package ex03;
+package ex04;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -13,7 +13,7 @@ public class Player extends JLabel implements Movable {
 	private boolean right;
 	private boolean up;
 	private boolean down;
-
+	
 	// 벽에 충돌한 상태
 	private boolean leftWallCrash;
 	private boolean rightWallCrash;
@@ -26,7 +26,7 @@ public class Player extends JLabel implements Movable {
 		initData();
 		setInitLayout();
 	}
-
+	
 	public boolean isLeftWallCrash() {
 		return leftWallCrash;
 	}
@@ -58,22 +58,6 @@ public class Player extends JLabel implements Movable {
 
 	public void setRight(boolean right) {
 		this.right = right;
-	}
-
-	public boolean isUp() {
-		return up;
-	}
-
-	public void setUp(boolean up) {
-		this.up = up;
-	}
-
-	public boolean isDown() {
-		return down;
-	}
-
-	public void setDown(boolean down) {
-		this.down = down;
 	}
 
 	private void initData() {
@@ -171,11 +155,18 @@ public class Player extends JLabel implements Movable {
 
 			@Override
 			public void run() {
-				while (down) {
+				for (int i = 0; i < 130 / JUMP_SPEED; i++) {
 					y = y + JUMP_SPEED;
 					setLocation(x, y);
-					down = false;
-				} // end of while
+					try {
+						Thread.sleep(3);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+				down = false;
+				// 상태값을 다룰 때는 상황이 변하면 초기화 처리를 잘 해줘야한다.
 			}
 		}).start();
 
