@@ -64,7 +64,7 @@ public class Player extends JLabel implements Movable {
 					setLocation(x, y);
 					try {
 						Thread.sleep(10);
-					} catch (InterruptedException e) {
+					} catch (InterruptedException e) { 
 						e.printStackTrace();
 					}
 				} // end of while
@@ -139,8 +139,6 @@ public class Player extends JLabel implements Movable {
 				// 상태값을 다룰 때는 상황이 변하면 초기화 처리를 잘 해줘야한다.
 			}
 		}).start();
-
-		System.out.println("");
 	}
 
 }
