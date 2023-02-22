@@ -1,4 +1,4 @@
-package ex05;
+package ex08;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
@@ -39,7 +39,6 @@ public class BackgroundPlayerService implements Runnable {
 			int bottomColorRight = image.getRGB(player.getX() + 40, player.getY() + 55);
 			// 하얀색이 아니면 바닥이다. 
 			if(bottomColorLeft + bottomColorRight != -2) {
-				System.out.println("여기는 바닥입니다.");
 				player.setDown(false);
 			} else {
 				// 쪼~끔 점프 하는 순간 bottomColorLeft -> - 1이 된다 

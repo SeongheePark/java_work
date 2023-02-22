@@ -8,11 +8,11 @@ public class Course {
 	public Course(int courseId, String name, String description) {
 		this.courseId = courseId;
 		this.name = name;
-		this.description = description;
+		this.description = description; 
 	}
 
 	public int getCourseId() {
-		return courseId;
+		return courseId; 
 	}
 
 	public void setCourseId(int courseId) {

@@ -10,10 +10,10 @@ public class SetMainTest {
 	public static void main(String[] args) {
 		// 순서가 없고 중복 불가
 		Set<Integer> set1 = new HashSet<>(); // 다형성
-		// 값 추가 방법
+		// 값 추가 방법 
 		set1.add(1);
 		set1.add(10);
-		set1.add(100);
+		set1.add(100);  
 		set1.add(500);
 		set1.add(1);
 		set1.add(1);
@@ -30,9 +30,9 @@ public class SetMainTest {
 		// Set 계열을 반복문 처리할 때 Iterator 타입으로 변환해서 처리할 수 있다
 		Iterator<Integer> iter = set1.iterator(); // 반복자로 형 변환처리
 		// hasNext(), next();
-//		System.out.println("next 사용1: " + iter.next());
-//		System.out.println("next 사용2: " + iter.next());
-//		System.out.println("next 사용3: " + iter.next());
+		System.out.println("next 사용1: " + iter.next());
+		System.out.println("next 사용2: " + iter.next());
+		System.out.println("next 사용3: " + iter.next());
 
 		// NoSuchElementException 예외
 //		try {

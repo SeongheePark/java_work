@@ -15,11 +15,12 @@ public class Frame extends JFrame {
 		initData();
 		setInitLayout();
 		addEventListener();
+		new Thread(new BackgroundPlayerService(player)).start();
 	}
 
 	private void initData() {
 		setTitle("Bubble Game");
-		backgroundMap = new JLabel(new ImageIcon("images/backgroundMap.png"));
+		backgroundMap = new JLabel(new ImageIcon("images/backgroundMapService.png"));
 		setSize(1000, 640);
 		setContentPane(backgroundMap);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
