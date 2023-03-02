@@ -1,4 +1,4 @@
-package ex10;
+package ex11;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -21,6 +21,7 @@ public class BubbleFrame extends JFrame {
 
 		// player 메모리에 올라간 상태
 		new Thread(new BackgroundPlayerService(player)).start();
+		new Thread(new BackgroundEnemyService(enemy)).start();
 	}
 
 	private void initData() {

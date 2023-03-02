@@ -1,4 +1,4 @@
-package ex10;
+package ex11;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -32,6 +32,7 @@ public class Enemy extends JLabel implements Movable {
 	public Enemy() {
 		initData();
 		setInitLayout();
+		left();
 	}
 
 	private void initData() {
@@ -59,6 +60,86 @@ public class Enemy extends JLabel implements Movable {
 
 	public void setState(int state) {
 		this.state = state;
+	}
+	
+	public int getX() {
+		return x;
+	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
+
+	public boolean isLeft() {
+		return left;
+	}
+
+	public void setLeft(boolean left) {
+		this.left = left;
+	}
+
+	public boolean isRight() {
+		return right;
+	}
+
+	public void setRight(boolean right) {
+		this.right = right;
+	}
+
+	public boolean isUp() {
+		return up;
+	}
+
+	public void setUp(boolean up) {
+		this.up = up;
+	}
+
+	public boolean isDown() {
+		return down;
+	}
+
+	public void setDown(boolean down) {
+		this.down = down;
+	}
+
+	public ImageIcon getEnemyR() {
+		return enemyR;
+	}
+
+	public void setEnemyR(ImageIcon enemyR) {
+		this.enemyR = enemyR;
+	}
+
+	public ImageIcon getEnemyL() {
+		return enemyL;
+	}
+
+	public void setEnemyL(ImageIcon enemyL) {
+		this.enemyL = enemyL;
+	}
+
+	public EnemyWay getEnemyWay() {
+		return enemyWay;
+	}
+
+	public void setEnemyWay(EnemyWay enemyWay) {
+		this.enemyWay = enemyWay;
+	}
+
+	public int getSPEED() {
+		return SPEED;
+	}
+
+	public int getJUMPSPEED() {
+		return JUMPSPEED;
 	}
 
 	@Override
