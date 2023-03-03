@@ -13,7 +13,7 @@ import java.net.Socket;
 // 서버측 연결을 담당하는 포트번호를 알아야한다.
 public class ClientFile {
 	// final String IP = "192.168.0.85";
-	final String IP = "192.168.0.86";
+	final String IP = "localhost";
 	Socket socket;
 	BufferedWriter bufferedWriter; // 출력 스트림
 	BufferedReader bufferedReader; // 입력 스트림
