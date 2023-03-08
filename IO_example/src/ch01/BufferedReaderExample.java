@@ -12,7 +12,7 @@ public class BufferedReaderExample {
 		// 키보드에서 값 입력 받는거
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-		//System.out.print("입력: ");
+		// System.out.print("입력: ");
 		try {
 			String input = reader.readLine();
 			System.out.println("input" + input);

@@ -23,7 +23,7 @@ public class MainTest1 {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		} 
+		}
 	}
 
 }
