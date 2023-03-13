@@ -8,7 +8,7 @@ public class MainTest1 {
 		UserDAO userDAO = new UserDAO();
 
 		// select
-		ArrayList<UserDTO> list = userDAO.select("성희");
+		ArrayList<UserDTO> list = userDAO.select();
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i).getName());
 			System.out.println(list.get(i).getAge());

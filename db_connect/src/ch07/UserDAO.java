@@ -96,23 +96,21 @@ public class UserDAO implements IUserDAO {
 		System.out.println("***1. 이름변경 2.나이변경 3.성별변경***");
 		int updateMenu = sc.nextInt();
 		if (updateMenu == 1) {
-			sqlFormat = "UPDATE userTB " + "SET name = ? " + "WHERE name = ? ";
+			sqlFormat = " UPDATE userTB " + "SET name = ? " + "WHERE name = ? ";
 			System.out.println("회원가입 되어있는 이름을 입력해주세요!");
 			String userName = sc.next();
 			System.out.println(userName + "님! 새로 변경할 이름을 입력해주세요");
 			String changeName = sc.next();
 			sql = String.format(sqlFormat, changeName, userName);
-		}
-		if (updateMenu == 2) {
-			sqlFormat = "UPDATE userTB " + "SET age = ? " + "WHERE name = ? ";
+		} else if (updateMenu == 2) {
+			sqlFormat = " UPDATE userTB SET age = ? WHERE name = ? ";
 			System.out.println("회원가입 되어있는 이름을 입력해주세요!");
 			String userName = sc.next();
 			System.out.println(userName + "님! 새로 변경할 나이를 입력해주세요");
-			int changeage = sc.nextInt();
-			sql = String.format(sqlFormat, changeage, userName);
-		}
-		if (updateMenu == 3) {
-			sqlFormat = "UPDATE userTB " + "SET gender = ? " + "WHERE name = ? ";
+			int changeAge = sc.nextInt();
+			sql = String.format(sqlFormat, changeAge, userName);
+		} else if (updateMenu == 3) {
+			sqlFormat = " UPDATE userTB SET gender = ? WHERE name = ? ";
 			System.out.println("회원가입 되어있는 이름을 입력해주세요!");
 			String userName = sc.next();
 			System.out.println(userName + "님! 새로 변경할 성별을 입력해주세요");
